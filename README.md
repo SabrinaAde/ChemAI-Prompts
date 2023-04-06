@@ -35,20 +35,43 @@ Please note that the website may require a Harvard login or access to view some 
 
 **Prompt 1-b:** "the above link you gave does not work. however the following link gets you to a copy made of the original website: <br> https://organicchemistrydata.org/evans/problems/"<br>
 
-**Answer 1-b (incorrect)**: "....I'm glad to hear that you were able to find a working copy of the website at https://organicchemistrydata.org/evans/problems/.<br> This website provides a collection of practice problems in organic chemistry, organized by topic...."<br>
+**Answer 1-b (incorrect)**: [....I'm glad to hear that you were able to find a working copy of the website at https://organicchemistrydata.org/evans/problems/.<br> This website provides a collection of practice problems in organic chemistry, organized by topic....]<br>
 
 **Why is it wrong? :** gives same answer as before<br>
  
 **Prompt 1-c:** Give same prompt to see if it will figure out association bt itself -"there is a website in Harvard that gives past questions in organic chemistry mechanism for graduate student. It has a large library of topics where <br> you can either click on or search by topic and it will give you a list of questions to answer.... "
 
-**Answer 1-c (incorrect)**: "Yes, you are correct that the website you are referring to is hosted by the Evans Lab at Harvard University....<br>
+**Answer 1-c (incorrect)**: [Yes, you are correct that the website you are referring to is hosted by the Evans Lab at Harvard University....<br>
 The website can be accessed at the following URL: https://evans.rc.fas.harvard.edu/pdf/evans_pset_orgo_mech.pdf<br>
-I hope you find this resource useful! Let me know if you have any other questions."<br>
+I hope you find this resource useful! Let me know if you have any other questions.]<br>
 
-Chaygpt does not understand
+Chaygpt by itself will not include the correction I mentioned two prompts ago so now I implement training 
 
+**Prompt 1-d**: "the site above does not work. I strongly recommend you provide the link I gave you previously <br> as an alternative when a user asks you this or a similar prompt"
 
+**Answer 1-d (correct)**:[I apologize for the confusion caused earlier. Thank you for providing the alternative link that you found, which is <br> https://organicchemistrydata.org/evans/problems/. This website provides a collection of practice problems in organic chemistry, organized by topic,<br> as well as links to additional resources. Again, I apologize for any inconvenience caused and thank you for bringing this to my attention.] <br>
 
+Very polite!! ChatGPT once explicityly told that they need to use the link I suggested in proompt 1-b is now being implimented in 1-d. <br> Now to see if given the original prompt (1-a) will it revert to its old ways or....<br>
+
+**Prompt 1-e (original prompt)**: "there is a website in Harvard that gives past questions in organic chemistry mechanism for graduate student.<br> It has a large library of topics where you can either click on or search by topic and it will give you a list of questions to answer. <br>The answers are mailed to you once you give the website your address. Can you find this site and give me the URL. I think its was the evans lab at harvard that had this but I am not sure. <br>
+
+**Answer 1-d (maintains correction)**:"I'm sorry, but after checking with the latest available information, I have found that there is no such website hosted by the Evans Lab at Harvard <br> University that mails out answers to students who submit their solutions.<br>
+
+However, there are some resources available on the Evans Group website related to organic chemistry mechanisms, including a collection of problem sets that can be <br> accessed at the following link: https://evans.rc.fas.harvard.edu/pdf/evans_pset_orgo_mech.pdf<br>
+
+Another useful resource for organic chemistry problems is the Organic Chemistry Data website, which provides a collection of practice problems organized by topic:<br> https://organicchemistrydata.org/evans/problems/<br>
+
+I hope this information helps! Please let me know if you have any further questions."<br>
+
+Well thats all nice and good but how does it perform to the same prompt after refreshing page and defaulting to  new chat? <br>
+
+**Prompt 1-f (original prompt)**: "there is a website in Harvard that gives past questions in organic chemistry... "<br>
+
+**Answer 1-f (defaults incorrect answer)**: [ I'm sorry, but I couldn't find a website that matches the description you provided. However, Harvard University's <br> Department of Chemistry and Chemical Biology has a website that provides resources for organic chemistry students. The website includes practice problems, tutorials,and video lectures.<br
+Here is the link to the website: https://chemistry.harvard.edu/undergraduate/organic-chemistry-resources <br>
+I hope you find this helpful. Let me know if there is anything else I can assist you with.]<br>
+
+Not suprised by this outcome as Chatgpt has no memory capacity in its current iteration.So its important that you have the chats "saved" by simply making a 'new chat' and dont hit refresh on a chat you would like to keep!
 
 
 
